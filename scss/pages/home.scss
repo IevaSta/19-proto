@@ -1,13 +1,77 @@
 /* header: start */
+.container-header{
+    background-color: $background-primary-color;
+    padding: 15px;
+}
 /* header: end */
 
 /* home: start */
+.container-home {
+    background-color: $background-primary-color;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
 /* home: end */
 
 /* strategic: start */
+.container-strategic{
+    background-color: #223b41;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .card-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card-right{
+        .card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}
 /* strategic: end */
 
 /* engineering: start */
+.container-engineering{
+    background-color: #223b41;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .card-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card-right{
+        .card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}
 /* engineering: end */
 
 /* visual: start */
