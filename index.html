@@ -18,13 +18,6 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
     <!--  -->
 
 </head>
@@ -35,119 +28,199 @@
         <img src="#" alt="logo">
         <button>BURGER</button>
         <nav>
-            <a href="#">Pagrindinis</a>
-            <a href="#">Strateginis pamatas</a>
-            <a href="#">Kompetencijų inžinerija</a>
-            <a href="#">Vizualūs sprendimai</a>
-            <a href="#">Kontaktai</a>
+            <ul>
+                <li><a href="#">Pagrindinis</a></li>
+                <li><a href="#">Strateginis pamatas</a></li>
+                <li><a href="#">Kompetencijų inžinerija</a></li>
+                <li><a href="#">Vizualūs sprendimai</a></li>
+                <li><a href="#">Kontaktai</a></li>
+                <li>
+                    <button>LT</button>
+                    <button>EN</button>
+                </li>
+            </ul>
         </nav>
-        <button>LT</button>
-        <button>EN</button>
     </header>
     <!-- header: end -->
 
-    <!-- home: start -->
-    <section class="container-home">
-        <div class="card">
+    <main>
+        <!-- home: start -->
+        <section class="container-home">
             <h1>Sprendimų architektūra</h1>
             <p>Mes tikime, kad tarpdiscipliniškumu grįsti sprendimai yra tiesus kelias į sėkmę.</p>
-        </div>
-        <div class="card">
-            <img src="#" alt="">
-            <h2>Strateginis pamatas</h2>
-            <p>Strateginio valdymo, psichologijos, ekonomikos, teisės ir komunikacijos žinias bei patirtis liejame į
-                vieningą ekosistemą ir formuojame strateginį verslo pamatą.</p>
-        </div>
-        <div class="card">
-            <img src="#" alt="">
-            <h2>Kompetencijų inžinerija</h2>
-            <p>Sujungiame civilines ir karines vadybos, streso valdymo, viešo kalbėjimo ir bendravimo praktikas tam, kad
-                vadovai ir aukšto lygio specialistai įgytų pranašumą.</p>
-        </div>
-        <div class="card">
-            <img src="#" alt="">
-            <h2>Vizualūs sprendimai</h2>
-            <p>Kuriame dėmesio ekonomikoje aktualius vizualinius sprendimus – nes auditorijos intuityviai teikia
-                prioritetą tam turiniui, kuris pateikiamas akiai patrauklioje formoje.</p>
-        </div>
-    </section>
-    <!-- home: end -->
-
-    <!-- strategic: start -->
-    <section class="container-strategic">
-        <div class="card-left">
-            <h2>Strateginis pamatas</h1>
+            <article class="card">
+                <img src="#" alt="Strateginis pamatas">
+                <h2>Strateginis pamatas</h2>
                 <p>Strateginio valdymo, psichologijos, ekonomikos, teisės ir komunikacijos žinias bei patirtis liejame į
-                    vieningą ekosistemą, taip formuodami strateginį verslo pamatą. Į darnią visumą sujungiame akademines
-                    disciplinas, ilgametes praktikas ir kanonus laužančią kūrybą.
-                </p>
-        </div>
-        <div class="card-right">
-            <div class="card">
-                <img src="#" alt="">
-                <h3>Strateginės sesijos</h3>
-                <p>Procesų valdymo, psichologijos, ekonomikos, teisės ir komunikacijos žinias bei patirtis liejame į
                     vieningą ekosistemą ir formuojame strateginį verslo pamatą.</p>
-            </div>
-            <div class="card">
-                <img src="#" alt="">
-                <h3>Kompetencijų inžinerija</h3>
+            </article>
+            <article class="card">
+                <img src="#" alt="Kompetencijų inžinerija">
+                <h2>Kompetencijų inžinerija</h2>
                 <p>Sujungiame civilines ir karines vadybos, streso valdymo, viešo kalbėjimo ir bendravimo praktikas tam,
-                    kad vadovai ir aukšto lygio specialistai įgytų pranašumą.</p>
-            </div>
-            <div class="card">
-                <img src="#" alt="">
-                <h3>Vizualūs sprendimai</h3>
-                <p>Kuriame dėmesio ekonomikoje aktualius vizualinius sprendimus - nes auditorijos intuityviai teikia
+                    kad
+                    vadovai ir aukšto lygio specialistai įgytų pranašumą.</p>
+            </article>
+            <article class="card">
+                <img src="#" alt="Vizualūs sprendimai">
+                <h2>Vizualūs sprendimai</h2>
+                <p>Kuriame dėmesio ekonomikoje aktualius vizualinius sprendimus – nes auditorijos intuityviai teikia
                     prioritetą tam turiniui, kuris pateikiamas akiai patrauklioje formoje.</p>
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- strategic: end -->
+            </article>
+        </section>
+        <!-- home: end -->
 
-    <!-- engineering: start -->
-    <section class="container-engineering">
-        <div class="card-left">
-            <h2>Kompetencijų inžinerija</h1>
-                <p>Sujungiame civilines ir karines vadybos, streso valdymo, viešo kalbėjimo ir bendravimo praktikas tam,
-                    kad vadovai ir aukšto lygio specialistai įgytų pranašumą.
-
-                    Dirbame individualiai su siekiančiais tobulinti asmenines kompetencijas.
-                </p>
-        </div>
-        <div class="card-right">
-            <div class="card">
-                <img src="#" alt="">
-                <h3>Lyderystė</h3>
-                <p>Pasitelkę pratikoje patikrintas metodikas įgaliname vadovus efektyviai telkti resursus ir vesti
-                    komandą į sėkmę.</p>
+        <!-- strategic: start -->
+        <section class="container-strategic">
+            <div class="card-left">
+                <h2>Strateginis pamatas</h1>
+                    <p>Strateginio valdymo, psichologijos, ekonomikos, teisės ir komunikacijos žinias bei patirtis
+                        liejame į vieningą ekosistemą, taip formuodami strateginį verslo pamatą. Į darnią visumą
+                        sujungiame akademines disciplinas, ilgametes praktikas ir kanonus laužančią kūrybą.</p>
             </div>
-            <div class="card">
-                <img src="#" alt="">
-                <h3>Retorika</h3>
-                <p>Padedame pasirengti bet kokio tipo viešai kalbai: pristatymui, pranešimui, aukšto lygio diskusijai ar
-                    interviu sužiniasklaida. Turintiems ilgalaikių tikslų sudarome asmeninį iškalbos tobulinimo kursą.
-                </p>
+            <div class="card-right">
+                <article class="card">
+                    <img src="#" alt="Strateginės sesijos">
+                    <h3>Strateginės sesijos</h3>
+                    <p>Procesų valdymo, psichologijos, ekonomikos, teisės ir komunikacijos žinias bei patirtis liejame į
+                        vieningą ekosistemą ir formuojame strateginį verslo pamatą.</p>
+                </article>
+                <article class="card">
+                    <img src="#" alt="Kompetencijų inžinerija">
+                    <h3>Kompetencijų inžinerija</h3>
+                    <p>Sujungiame civilines ir karines vadybos, streso valdymo, viešo kalbėjimo ir bendravimo praktikas
+                        tam, kad vadovai ir aukšto lygio specialistai įgytų pranašumą.</p>
+                </article>
+                <article class="card">
+                    <img src="#" alt="Vizualūs sprendimai">
+                    <h3>Vizualūs sprendimai</h3>
+                    <p>Kuriame dėmesio ekonomikoje aktualius vizualinius sprendimus - nes auditorijos intuityviai teikia
+                        prioritetą tam turiniui, kuris pateikiamas akiai patrauklioje formoje.</p>
+                </article>
             </div>
-            <div class="card">
-                <img src="#" alt="">
-                <h3>Streso valdymas</h3>
-                <p>Atskleidžiame streso psichologijos paslaptis, supažindiname su streso veikimo mechanizmu ir padedame
-                    išmokti praktines streso valdymo metodikas.</p>
+        </section>
+        <!-- strategic: end -->
+
+        <!-- engineering: start -->
+        <section class="container-engineering">
+            <div class="card-left">
+                <h2>Kompetencijų inžinerija</h1>
+                    <p>Sujungiame civilines ir karines vadybos, streso valdymo, viešo kalbėjimo ir bendravimo praktikas
+                        tam, kad vadovai ir aukšto lygio specialistai įgytų pranašumą.
+
+                        Dirbame individualiai su siekiančiais tobulinti asmenines kompetencijas.</p>
             </div>
-        </div>
-        </div>
-    </section>
-    <!-- engineering: end -->
+            <div class="card-right">
+                <article class="card">
+                    <img src="#" alt="Lyderystė">
+                    <h3>Lyderystė</h3>
+                    <p>Pasitelkę pratikoje patikrintas metodikas įgaliname vadovus efektyviai telkti resursus ir vesti
+                        komandą į sėkmę.</p>
+                </article>
+                <article class="card">
+                    <img src="#" alt="Retorika">
+                    <h3>Retorika</h3>
+                    <p>Padedame pasirengti bet kokio tipo viešai kalbai: pristatymui, pranešimui, aukšto lygio
+                        diskusijai ar interviu sužiniasklaida. Turintiems ilgalaikių tikslų sudarome asmeninį iškalbos
+                        tobulinimo kursą.</p>
+                </article>
+                <article class="card">
+                    <img src="#" alt="Streso valdymas">
+                    <h3>Streso valdymas</h3>
+                    <p>Atskleidžiame streso psichologijos paslaptis, supažindiname su streso veikimo mechanizmu ir
+                        padedame išmokti praktines streso valdymo metodikas.</p>
+                </article>
+            </div>
+        </section>
+        <!-- engineering: end -->
 
-    <!-- visual: start -->
-    <!-- visual: end -->
+        <!-- visual: start -->
+        <section class="container-visual">
+            <div class="card-left">
+                <h2>Vizualūs sprendimai</h1>
+                    <p>Kuriame dėmesio ekonomikoje aktualius vizualinius sprendimus - nes auditorijos intuityviai teikia
+                        prioritetą tam turiniui, kuris pateikiamas akiai patrauklioje formoje.</p>
+            </div>
+            <div class="card-right">
+                <article class="card">
+                    <img src="#" alt="Analizė auditas">
+                    <h3>Analizė / auditas</h3>
+                    <p>Skirtingais pjūviais nagrinėjame prekės ženklo ir jo konkurencinio lauko vizualinius sprendimus,
+                        identifikuojame stiprybes ir silpnybes iš ekspertų ir vartotojų perspektyvų.</p>
+                </article>
+                <article class="card">
+                    <img src="#" alt="Vizualinis identitetas">
+                    <h3>Vizualinis identitetas</h3>
+                    <p>Kuriame vientisą vizualinę sistemą, kuri prikausto dėmesį, pabrėžia prekės ženklo unikalumą ir
+                        atskleidžia jo vertę.</p>
+                </article>
+                <article class="card">
+                    <img src="#" alt="Priemonių rinkinys">
+                    <h3>Priemonių rinkinys</h3>
+                    <p>Patogiam vizualinio identiteto naudojimui ir prekės ženklo ekspresijai ruošiame reikiamų
+                        priemonių rinkinius bei šablonus.</p>
+                </article>
+                <article class="card">
+                    <img src="#" alt="Leidiniai">
+                    <h3>Priemonių rinkinys</h3>
+                    <p>Jungdami meninius ir marketingo sprendimus kuriame unikalius, aukštos pridėtinės vertės leidinių
+                        dizainus.</p>
+                </article>
+                <article class="card">
+                    <img src="#" alt="Internetinė svetainė">
+                    <h3>Internetinė svetainė</h3>
+                    <p>Kuriame efektyvų dizainą ir informaciją pateikiame tikslinių segmentų kalba.</p>
+                </article>
+                <article class="card">
+                    <img src="#" alt="Pakuotės">
+                    <h3>Pakuotės</h3>
+                    <p>Derindami MAYA ir “Design Thinking” kuriame įsimintinas ir vartotojui patrauklias pakuotes.</p>
+                </article>
+            </div>
+        </section>
+        <!-- visual: end -->
 
-    <!-- contacts: start -->
-    <!-- contacts: end -->
+        <!-- form: start -->
+        <section class="container-form">
+            <div class="card-left">
+                <h2>Aptarkime iššūkius</h1>
+                    <p>Parašykite mums apie savo iššūkį ir mes netrukus susisieksime.</p>
+            </div>
+            <form action="">
+                <label for="name">Vardas*</label>
+                <input type="text" name="name" id="name" required placeholder="Kaip į Jus kreiptis?">
+
+                <label for="email">E-pašto adresas*</label>
+                <input type="email" name="email" id="email" required placeholder="Kokiu elektroniniu paštu atrašyti?">
+
+                <label for="freeform">Žinutė*</label>
+                <textarea id="freeform" name="freeform"
+                    placeholder="Trumpai pristatykite savo iššūkį ir mes nutruksime susisiekti!"></textarea>
+
+                <button>Siųsti</button>
+            </form>
+        </section>
+        <!-- form: end -->
+    </main>
 
     <!-- footer: start -->
+    <footer class="container-footer">
+        <div class="card-left">
+            <h2>Kontaktai</h1>
+                <div>
+                    <img src="#" alt="email">
+                    <a href="">hello@protoconsulting.eu</a>
+                </div>
+                <div>
+                    <img src="#" alt="phone">
+                    <a href="">+370 643 31733</a>
+                </div>
+        </div>
+        <small>
+            <span>2023 © Proto consulting</span>
+            <span>Visos teisės saugomos</span>
+        </small>
+    </footer>
     <!-- footer: end -->
 </body>
 
