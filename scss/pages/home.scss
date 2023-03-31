@@ -1,8 +1,9 @@
 /* header: start */
-.container-header{
+.container-header {
     background-color: $background-primary-color;
     padding: 15px;
 }
+
 /* header: end */
 
 /* home: start */
@@ -20,25 +21,26 @@
         flex-direction: column;
     }
 }
+
 /* home: end */
 
 /* strategic: start */
-.container-strategic{
+.container-strategic {
     background-color: #223b41;
     padding: 15px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 
-    .card-left{
+    .card-left {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
 
-    .card-right{
-        .card{
+    .card-right {
+        .card {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -46,25 +48,26 @@
         }
     }
 }
+
 /* strategic: end */
 
 /* engineering: start */
-.container-engineering{
+.container-engineering {
     background-color: #223b41;
     padding: 15px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 
-    .card-left{
+    .card-left {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
 
-    .card-right{
-        .card{
+    .card-right {
+        .card {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -72,13 +75,48 @@
         }
     }
 }
+
 /* engineering: end */
 
 /* visual: start */
+.container-visual {
+    background-color: #223b41;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .card-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card-right {
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}
+
 /* visual: end */
 
-/* contacts: start */
-/* contacts: end */
+/* form: start */
+.container-form {
+    background-color: $background-primary-color;
+    padding: 15px;
+}
+
+/* form: end */
 
 /* footer: start */
+.container-footer {
+    background-color: $background-primary-color;
+    padding: 15px;
+}
+
 /* footer: end */

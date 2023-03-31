@@ -2,15 +2,11 @@ html {
     scroll-behavior: smooth;
 }
 
-body,
-body * {
-    margin: 0;
-    padding: 0;
+* {
+    margin: unset;
+    padding: unset;
     vertical-align: top;
     box-sizing: border-box;
-}
-
-body {
     font-family: 'Montserrat', sans-serif;
     color: $text-color;
 }
