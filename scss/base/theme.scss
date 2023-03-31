@@ -17,3 +17,29 @@ $text-size-36: 36px;
 $text-size-24: 24px;
 $text-size-18: 18px;
 $text-size-12: 12px;
+
+
+
+// %aurimas {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+// }
+
+// .klase {
+//     @extend %aurimas;
+// }
+
+
+
+// @mixin f-c-c {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .klase2 {
+//     @include f-c-c;
+//     align-items: flex-start;
+// }
