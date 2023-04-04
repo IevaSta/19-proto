@@ -1,7 +1,29 @@
 /* header: start */
 .container-header {
     background-color: $background-primary-color;
-    padding: 15px;
+    padding: 25px 15px;
+    display: block;
+    position: relative;
+
+    .logo {
+        max-height: 40px;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    a {
+        text-decoration: unset;
+        font-size: $text-size-18;
+        font-weight: 400;
+
+        &:hover {
+            font-weight: 700;
+        }
+    }
 }
 
 /* header: end */

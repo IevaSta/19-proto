@@ -9,4 +9,7 @@ html {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     color: $text-color;
+    outline: unset;
+    border: unset;
+    list-style-type: none;
 }
