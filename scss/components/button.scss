@@ -1,0 +1,12 @@
+ .btn-nav {
+     background: transparent;
+     cursor: pointer;
+     font-size: $text-size-18;
+     font-weight: 400;
+     margin: 0 5px 0 5px;
+
+     &:hover,
+     &:active {
+         color: $accent-color;
+     }
+ }
