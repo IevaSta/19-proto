@@ -3,7 +3,7 @@
     background-color: $background-primary-color;
     padding: 25px 15px;
     display: block;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
 
@@ -137,6 +137,11 @@
 .container-form {
     background-color: $background-primary-color;
     padding: 15px;
+
+    textarea {
+        resize: vertical;
+    }
+
 }
 
 /* form: end */

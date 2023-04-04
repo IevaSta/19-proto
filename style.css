@@ -4,6 +4,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+  padding-top: 90px;
+}
+
 * {
   margin: unset;
   padding: unset;
@@ -26,6 +31,10 @@ html {
   margin: 0 5px 0 5px;
 }
 .btn-nav:hover, .btn-nav:active {
+  color: #d5ff30;
+}
+
+.btn-nav-active {
   color: #d5ff30;
 }
 
@@ -72,17 +81,17 @@ html {
 }
 
 .menu-items {
-  display: none;
+  background-color: #122023;
+  position: absolute;
+  right: -150%;
   padding-top: 50px;
   height: 100vh;
-  width: 100%;
-  transform: translate(150%);
-  transition: transform 0.5s ease-in-out;
+  width: 100vw;
+  transition: all 0.6s ease-in-out;
 }
 
 .container-header input[type=checkbox]:checked ~ .menu-items {
-  display: block;
-  transform: translateX(0);
+  right: -15px;
 }
 
 .container-header input[type=checkbox]:checked ~ .hamburger-lines .line1 {
@@ -103,7 +112,7 @@ html {
   background-color: #122023;
   padding: 25px 15px;
   display: block;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
 }
@@ -214,6 +223,9 @@ html {
 .container-form {
   background-color: #122023;
   padding: 15px;
+}
+.container-form textarea {
+  resize: vertical;
 }
 
 /* form: end */

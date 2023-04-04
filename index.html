@@ -41,7 +41,7 @@
                     <li><a href="#">Vizualūs sprendimai</a></li>
                     <li><a href="#">Kontaktai</a></li>
                     <li>
-                        <button class="btn-nav">LT</button>
+                        <button class="btn-nav btn-nav-active">LT</button>
                         <button class="btn-nav">EN</button>
                     </li>
                 </ul>
@@ -193,19 +193,20 @@
                 <h2>Aptarkime iššūkius</h1>
                     <p>Parašykite mums apie savo iššūkį ir mes netrukus susisieksime.</p>
             </div>
-            <form action="">
+            <form onsubmit="handleSubmit()">
                 <label for="name">Vardas*</label>
                 <input type="text" name="name" id="name" required placeholder="Kaip į Jus kreiptis?">
 
                 <label for="email">E-pašto adresas*</label>
                 <input type="email" name="email" id="email" required placeholder="Kokiu elektroniniu paštu atrašyti?">
 
-                <label for="freeform">Žinutė*</label>
-                <textarea id="freeform" name="freeform"
+                <label for="note">Žinutė*</label>
+                <textarea id="note" name="note"
                     placeholder="Trumpai pristatykite savo iššūkį ir mes nutruksime susisiekti!"></textarea>
 
                 <button>Siųsti</button>
             </form>
+            <script src="./js/functions/handleSubmit.js"></script>
         </section>
         <!-- form: end -->
     </main>
