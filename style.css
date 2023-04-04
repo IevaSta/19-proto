@@ -34,8 +34,8 @@ html {
   display: block;
   height: 26px;
   width: 26px;
-  top: 25px;
-  right: 15px;
+  top: 0px;
+  right: 0px;
   z-index: 5;
   opacity: 0;
   cursor: pointer;
@@ -46,8 +46,8 @@ html {
   height: 20px;
   width: 26px;
   position: absolute;
-  top: 25px;
-  right: 15px;
+  top: 0px;
+  right: 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -103,6 +103,11 @@ html {
   background-color: #122023;
   padding: 25px 15px;
   display: block;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+.container-header .container-nav {
   position: relative;
 }
 .container-header .logo {

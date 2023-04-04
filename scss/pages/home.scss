@@ -3,7 +3,13 @@
     background-color: $background-primary-color;
     padding: 25px 15px;
     display: block;
-    position: relative;
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+    .container-nav {
+        position: relative;
+    }
 
     .logo {
         max-height: 40px;
