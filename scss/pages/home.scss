@@ -37,8 +37,7 @@
 /* home: start */
 .container-home {
     @extend %bgrnd-flex-c-c-clm;
-    padding: 90px 15px 45px 15px;
-    height: 100%;
+    padding: 90px 15px 90px 15px;
 
     h1 {
         font-size: $text-size-32;
@@ -51,10 +50,12 @@
 
     .main-p {
         @extend %paragraph;
+        font-size: $text-size-18;
         padding-top: 30px;
+        padding-bottom: 60px;
     }
 
-    .card {
+    .home-card {
         @extend %flex-c-c-clm;
         padding-top: 90px;
 
@@ -74,7 +75,6 @@
             text-align: justify;
             padding-top: 30px;
         }
-
     }
 }
 
@@ -84,21 +84,15 @@
 .container-strategic {
     background-color: $background-secondary-color;
     @extend %flex-c-c-clm;
-    padding: 120px 15px 30px 15px;
+    padding: 90px 15px 0 15px;
 
     .card-left {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @extend %card-left;
     }
 
     .card-right {
         .card {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            @extend %card-right;
         }
     }
 }
@@ -107,25 +101,17 @@
 
 /* engineering: start */
 .container-engineering {
-    background-color: #223b41;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    background-color: $background-secondary-color;
+    @extend %flex-c-c-clm;
+    padding: 90px 15px 0 15px;
 
     .card-left {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @extend %card-left;
     }
 
     .card-right {
         .card {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            @extend %card-right;
         }
     }
 }
@@ -134,25 +120,17 @@
 
 /* visual: start */
 .container-visual {
-    background-color: #223b41;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    background-color: $background-secondary-color;
+    @extend %flex-c-c-clm;
+    padding: 90px 15px 0 15px;
 
     .card-left {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @extend %card-left;
     }
 
     .card-right {
         .card {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            @extend %card-right;
         }
     }
 }

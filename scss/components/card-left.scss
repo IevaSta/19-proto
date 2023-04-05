@@ -1,0 +1,19 @@
+ %card-left {
+     @extend %flex-c-c-clm;
+
+     h2 {
+         font-size: $text-size-32;
+         font-weight: 400;
+         text-align: center;
+         max-width: 80%;
+         color: $accent-color;
+         line-height: 1.3;
+     }
+
+     p {
+         @extend %paragraph;
+         text-align: justify;
+         padding-top: 30px;
+         padding-bottom: 90px;
+     }
+ }
