@@ -9,25 +9,22 @@
 
     .container-nav {
         position: relative;
+
+        >a {
+            height: 40px;
+            width: 200px;
+
+            .logo {
+                height: 40px;
+            }
+        }
     }
 
-    .logo {
-        max-height: 40px;
-    }
-
-    li {
-        display: flex;
-        justify-content: center;
-        margin: 20px;
-    }
-
-    a {
-        text-decoration: unset;
-        font-size: $text-size-18;
-        font-weight: 400;
-
-        &:hover {
-            font-weight: 700;
+    @media (min-width: $desktop) {
+        .container-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center
         }
     }
 }
@@ -37,7 +34,7 @@
 /* home: start */
 .container-home {
     @extend %bgrnd-flex-c-c-clm;
-    padding: 90px 15px 90px 15px;
+    padding: 180px 15px 90px 15px;
 
     h1 {
         font-size: $text-size-32;

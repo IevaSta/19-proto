@@ -28,7 +28,6 @@ html {
 
 body {
   overflow-x: hidden;
-  padding-top: 90px;
 }
 
 * {
@@ -128,20 +127,6 @@ body {
   transition: transform 0.4s ease-in-out;
 }
 
-.menu-items {
-  background-color: rgb(18, 32, 35);
-  position: absolute;
-  right: -150%;
-  padding-top: 50px;
-  height: 100vh;
-  width: 100vw;
-  transition: all 0.6s ease-in-out;
-}
-
-.container-header input[type=checkbox]:checked ~ .menu-items {
-  right: -15px;
-}
-
 .container-header input[type=checkbox]:checked ~ .hamburger-lines .line1 {
   transform: rotate(45deg);
 }
@@ -154,6 +139,56 @@ body {
   transform: rotate(-45deg);
 }
 
+.menu-items {
+  background-color: rgb(18, 32, 35);
+  position: absolute;
+  right: -150%;
+  padding-top: 50px;
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.6s ease-in-out;
+}
+.menu-items ul {
+  display: flex;
+  flex-direction: column;
+}
+.menu-items ul li {
+  display: flex;
+  justify-content: center;
+  margin: 20px 10px;
+}
+.menu-items ul li a {
+  text-decoration: unset;
+  font-size: 18px;
+  font-weight: 400;
+}
+.menu-items ul li a:hover {
+  font-weight: 700;
+}
+
+.container-header input[type=checkbox]:checked ~ .menu-items {
+  right: -15px;
+}
+
+@media (min-width: 1024px) {
+  .checkbox,
+  .hamburger-lines {
+    display: none;
+  }
+  .menu-items {
+    position: unset;
+    top: 0;
+    right: -15px;
+    transition: unset;
+    padding-top: 0;
+    height: unset;
+    width: unset;
+    background-color: unset;
+  }
+  .menu-items ul {
+    flex-direction: row;
+  }
+}
 .container-form .card-left h2, .container-visual .card-left h2, .container-engineering .card-left h2, .container-strategic .card-left h2 {
   font-size: 32px;
   font-weight: 400;
@@ -268,27 +303,25 @@ body {
 .container-header .container-nav {
   position: relative;
 }
-.container-header .logo {
-  max-height: 40px;
+.container-header .container-nav > a {
+  height: 40px;
+  width: 200px;
 }
-.container-header li {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
+.container-header .container-nav > a .logo {
+  height: 40px;
 }
-.container-header a {
-  text-decoration: unset;
-  font-size: 18px;
-  font-weight: 400;
-}
-.container-header a:hover {
-  font-weight: 700;
+@media (min-width: 1024px) {
+  .container-header .container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 /* header: end */
 /* home: start */
 .container-home {
-  padding: 90px 15px 90px 15px;
+  padding: 180px 15px 90px 15px;
 }
 .container-home h1 {
   font-size: 32px;
