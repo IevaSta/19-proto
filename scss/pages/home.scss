@@ -139,11 +139,16 @@
 
 /* form: start */
 .container-form {
-    background-color: $background-primary-color;
-    padding: 15px;
+    @extend %bgrnd-flex-c-c-clm;
+    padding: 90px 15px 0 15px;
 
-    textarea {
-        resize: vertical;
+    .card-left {
+        @extend %card-left;
+
+        p {
+            text-align: center;
+            padding-bottom: 30px;
+        }
     }
 
 }
@@ -152,8 +157,34 @@
 
 /* footer: start */
 .container-footer {
-    background-color: $background-primary-color;
-    padding: 15px;
+    @extend %bgrnd-flex-c-c-clm;
+    align-items: flex-start;
+    padding: 90px 35px 35px;
+
+    .card-footer {
+        @extend %flex-c-c-clm;
+        align-items: flex-start;
+
+        h2 {
+            font-size: $text-size-20;
+            font-weight: 600;
+        }
+
+        .contacts {
+            padding-top: 15px;
+
+            a {
+                text-decoration: unset;
+                padding-left: 15px;
+            }
+        }
+    }
+
+    small {
+        padding-top: 30px;
+        font-size: $text-size-14;
+    }
+
 }
 
 /* footer: end */

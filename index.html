@@ -26,7 +26,7 @@
     <!-- header: start -->
     <header class="container-header">
         <div class="container-nav">
-            <img class="logo" src="./img/logo/Proto_logo_inverse.svg" alt="logo">
+            <a href="#home"><img class="logo" src="./img/logo/Proto_logo_inverse.svg" alt="logo"></a>
             <input class="checkbox" type="checkbox" name="" id="" />
             <div class="hamburger-lines">
                 <span class="line line1"></span>
@@ -35,11 +35,11 @@
             </div>
             <nav class="menu-items">
                 <ul>
-                    <li><a href="#">Pagrindinis</a></li>
-                    <li><a href="#">Strateginis pamatas</a></li>
-                    <li><a href="#">Kompetencijų inžinerija</a></li>
-                    <li><a href="#">Vizualūs sprendimai</a></li>
-                    <li><a href="#">Kontaktai</a></li>
+                    <li><a href="#home">Pagrindinis</a></li>
+                    <li><a href="#strategic">Strateginis pamatas</a></li>
+                    <li><a href="#engineering">Kompetencijų inžinerija</a></li>
+                    <li><a href="#visual">Vizualūs sprendimai</a></li>
+                    <li><a href="#form">Kontaktai</a></li>
                     <li>
                         <button class="btn-nav btn-nav-active">LT</button>
                         <button class="btn-nav">EN</button>
@@ -52,7 +52,7 @@
 
     <main>
         <!-- home: start -->
-        <section class="container-home">
+        <section id="home" class="container-home">
             <h1>Sprendimų architektūra</h1>
             <p class="main-p">Mes tikime, kad tarpdiscipliniškumu grįsti sprendimai yra tiesus kelias į sėkmę.</p>
             <div class="btn-link">
@@ -93,10 +93,10 @@
         <!-- strategic: start -->
         <section id="strategic" class="container-strategic">
             <div class="card-left">
-                <h2>Strateginis pamatas</h1>
-                    <p>Strateginio valdymo, psichologijos, ekonomikos, teisės ir komunikacijos žinias bei patirtis
-                        liejame į vieningą ekosistemą, taip formuodami strateginį verslo pamatą. Į darnią visumą
-                        sujungiame akademines disciplinas, ilgametes praktikas ir kanonus laužančią kūrybą.</p>
+                <h2>Strateginis pamatas</h2>
+                <p>Strateginio valdymo, psichologijos, ekonomikos, teisės ir komunikacijos žinias bei patirtis
+                    liejame į vieningą ekosistemą, taip formuodami strateginį verslo pamatą. Į darnią visumą
+                    sujungiame akademines disciplinas, ilgametes praktikas ir kanonus laužančią kūrybą.</p>
             </div>
             <div class="card-right">
                 <article class="card">
@@ -124,11 +124,13 @@
         <!-- engineering: start -->
         <section id="engineering" class="container-engineering">
             <div class="card-left">
-                <h2>Kompetencijų inžinerija</h1>
-                    <p>Sujungiame civilines ir karines vadybos, streso valdymo, viešo kalbėjimo ir bendravimo praktikas
-                        tam, kad vadovai ir aukšto lygio specialistai įgytų pranašumą.
-
-                        Dirbame individualiai su siekiančiais tobulinti asmenines kompetencijas.</p>
+                <h2>Kompetencijų inžinerija</h2>
+                <p>Sujungiame civilines ir karines vadybos, streso valdymo, viešo kalbėjimo ir bendravimo praktikas
+                    tam, kad vadovai ir aukšto lygio specialistai įgytų pranašumą.
+                    <br>
+                    <br>
+                    Dirbame individualiai su siekiančiais tobulinti asmenines kompetencijas.
+                </p>
             </div>
             <div class="card-right">
                 <article class="card">
@@ -157,9 +159,9 @@
         <!-- visual: start -->
         <section id="visual" class="container-visual">
             <div class="card-left">
-                <h2>Vizualūs sprendimai</h1>
-                    <p>Kuriame dėmesio ekonomikoje aktualius vizualinius sprendimus - nes auditorijos intuityviai teikia
-                        prioritetą tam turiniui, kuris pateikiamas akiai patrauklioje formoje.</p>
+                <h2>Vizualūs sprendimai</h2>
+                <p>Kuriame dėmesio ekonomikoje aktualius vizualinius sprendimus - nes auditorijos intuityviai teikia
+                    prioritetą tam turiniui, kuris pateikiamas akiai patrauklioje formoje.</p>
             </div>
             <div class="card-right">
                 <article class="card">
@@ -203,17 +205,17 @@
         <!-- form: start -->
         <section id="form" class="container-form">
             <div class="card-left">
-                <h2>Aptarkime iššūkius</h1>
+                <h2>Aptarkime iššūkius!</h1>
                     <p>Parašykite mums apie savo iššūkį ir mes netrukus susisieksime.</p>
             </div>
-            <form onsubmit="handleSubmit()">
-                <label for="name">Vardas*</label>
-                <input type="text" name="name" id="name" required placeholder="Kaip į Jus kreiptis?">
+            <form class="form" onsubmit="handleSubmit()">
+                <label for="name">Vardas *</label>
+                <input type="text" name="name" id="name" placeholder="Kaip į Jus kreiptis?">
 
-                <label for="email">E-pašto adresas*</label>
-                <input type="email" name="email" id="email" required placeholder="Kokiu elektroniniu paštu atrašyti?">
+                <label for="email">E-pašto adresas *</label>
+                <input type="email" name="email" id="email" placeholder="Kokiu elektroniniu paštu atrašyti?">
 
-                <label for="note">Žinutė*</label>
+                <label for="note">Žinutė *</label>
                 <textarea id="note" name="note"
                     placeholder="Trumpai pristatykite savo iššūkį ir mes nutruksime susisiekti!"></textarea>
 
@@ -226,19 +228,19 @@
 
     <!-- footer: start -->
     <footer class="container-footer">
-        <div class="card-left">
-            <h2>Kontaktai</h1>
-                <div>
-                    <img src="#" alt="email">
-                    <a href="">hello@protoconsulting.eu</a>
-                </div>
-                <div>
-                    <img src="#" alt="phone">
-                    <a href="">+370 643 31733</a>
-                </div>
+        <div class="card-footer">
+            <h2>Kontaktai:</h2>
+            <div class="contacts">
+                <span>&#9993;</span>
+                <a href="mailto: hello@protoconsulting.eu">hello@protoconsulting.eu</a>
+            </div>
+            <div class="contacts">
+                <span>&#9743;</span>
+                <a href="tel: +370 (643) 31 733">+370 (643) 31 733</a>
+            </div>
         </div>
         <small>
-            <span>2023 © Proto consulting.</span>
+            <span>2023 &copy; Proto consulting.</span>
             <span>Visos teisės saugomos.</span>
         </small>
     </footer>

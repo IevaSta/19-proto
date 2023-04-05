@@ -5,9 +5,10 @@ $desktop: 1024px;
 // colors
 $text-color: #c5c5c5;
 $icons-text-color: #a1c0c3;
-$background-primary-color: #122023;
-$background-secondary-color: #223b41;
+$background-primary-color: rgb(18, 32, 35);
+$background-secondary-color: rgb(34, 59, 65);
 $accent-color: #d5ff30;
+$placeholder-color: #89a3a5;
 
 
 // sizes
@@ -19,6 +20,7 @@ $text-size-32: 32px;
 $text-size-20: 20px;
 $text-size-18: 18px;
 $text-size-16: 16px;
+$text-size-14: 14px;
 
 // @extends
 %bgrnd-flex-c-c-clm {
@@ -43,17 +45,6 @@ $text-size-16: 16px;
     line-height: 1.6;
 }
 
-
-// %aurimas {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: column;
-// }
-
-// .klase {
-//     @extend %aurimas;
-// }
 
 
 
