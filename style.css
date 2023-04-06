@@ -67,10 +67,20 @@ body {
   font-size: 16px;
   text-align: center;
 }
-.btn-link a:hover, .btn-link a:active {
+.btn-link a:hover {
   color: #d5ff30;
 }
+.btn-link a:active {
+  color: #d5ff30;
+  background-color: rgb(34, 59, 65);
+}
 
+@media (min-width: 1024px) {
+  .container-home > .btn-link {
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+}
 .btn-nav {
   background: transparent;
   cursor: pointer;
@@ -381,16 +391,18 @@ body {
     width: 100%;
     justify-content: space-between;
     flex-direction: row;
+    align-items: unset;
   }
   .container-home .card-home-left h1 {
-    width: 40%;
     font-size: 60px;
     text-align: left;
   }
   .container-home .card-home-left .main-p {
     width: 30%;
-    font-size: 32px;
+    font-size: 20px;
     text-align: right;
+    padding-top: unset;
+    padding-bottom: unset;
   }
 }
 /* home: end */

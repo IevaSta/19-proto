@@ -23,9 +23,24 @@
         font-size: $text-size-16;
         text-align: center;
 
-        &:hover,
+        &:hover {
+            color: $accent-color;
+        }
+
         &:active {
             color: $accent-color;
+            background-color: $background-secondary-color;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+
+    .container-home {
+        >.btn-link {
+            align-items: flex-start;
+            padding-top: 30px;
+
         }
     }
 }
