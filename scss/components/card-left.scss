@@ -1,34 +1,34 @@
- %card-left {
-     @extend %flex-c-c-clm;
+%card-left {
+    @extend %flex-c-c-clm;
 
-     h2 {
-         font-size: $text-size-32;
-         font-weight: 400;
-         text-align: center;
-         max-width: 60%;
-         color: $accent-color;
-         line-height: 1.3;
-     }
+    h2 {
+        font-size: $text-size-32;
+        font-weight: 400;
+        text-align: center;
+        max-width: 60%;
+        color: $accent-color;
+        line-height: 1.3;
+    }
 
-     p {
-         @extend %paragraph;
-         text-align: justify;
-         padding-top: 30px;
-         padding-bottom: 90px;
-     }
- }
+    p {
+        @extend %paragraph;
+        text-align: justify;
+        padding-top: 30px;
+        padding-bottom: 90px;
+    }
+}
 
- @media (min-width: $desktop) {
-     %card-left {
-         width: 55%;
+@media (min-width: $desktop) {
+    %card-left {
+        width: 55%;
 
-         h2 {
-             font-size: $text-size-48;
-             max-width: unset;
-         }
+        h2 {
+            font-size: $text-size-48;
+            max-width: unset;
+        }
 
-         p {
-             max-width: 100%;
-         }
-     }
- }
+        p {
+            max-width: 100%;
+        }
+    }
+}

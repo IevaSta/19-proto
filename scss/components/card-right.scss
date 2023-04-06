@@ -1,55 +1,58 @@
- %card-right {
-     @extend %flex-c-c-clm;
-     padding: 60px 0 30px 0;
-     margin: 45px 30px;
+%card-right {
+    @extend %flex-c-c-clm;
+    padding: 60px 0 30px 0;
+    margin: 45px 30px;
 
-     box-shadow: 1px 1px 17px 5px rgba(18, 32, 35, 0.6);
-     -webkit-box-shadow: 1px 1px 17px 5px rgba(18, 32, 35, 0.6);
-     -moz-box-shadow: 1px 1px 17px 5px rgba(18, 32, 35, 0.6);
+    box-shadow: 1px 1px 17px 5px rgba(18, 32, 35, 0.6);
+    -webkit-box-shadow: 1px 1px 17px 5px rgba(18, 32, 35, 0.6);
+    -moz-box-shadow: 1px 1px 17px 5px rgba(18, 32, 35, 0.6);
 
-     img {
-         max-height: 93px;
-         margin-bottom: 30px;
-     }
+    img {
+        max-height: 93px;
+        margin-bottom: 30px;
+    }
 
-     .card-body {
-         @extend %flex-c-c-clm;
+    .card-body {
+        @extend %flex-c-c-clm;
 
-         h3 {
-             font-size: $text-size-20;
-             color: $accent-color;
-             font-weight: 400;
-         }
+        h3 {
+            font-size: $text-size-20;
+            color: $accent-color;
+            font-weight: 400;
+        }
 
-         p {
-             @extend %paragraph;
-             text-align: justify;
-             padding-top: 30px;
-         }
-     }
- }
+        p {
+            @extend %paragraph;
+            text-align: justify;
+            padding-top: 30px;
+        }
+    }
+}
 
- @media (min-width: $desktop) {
-     %card-right {
-         //  padding: 30px 0 30px 0;
-         //  margin: 45px 0;
-         //  align-items: flex-start;
+@media (min-width: $desktop) {
+    %card-right {
+        padding: 30px 0 30px 0;
+        margin: 45px 0;
+        flex-direction: row;
+        margin-left: 200px;
 
-         img {
-             //  margin-left: unset;
-             //  margin-bottom: unset;
-         }
+        &:first-child,
+        &:last-child {
+            margin-left: 0;
+            margin-right: 200px;
+        }
 
-         .card-body {
-             h3 {
-                 padding-left: 220px;
-                 font-size: $text-size-25;
-             }
+        img {
+            margin-left: 45px;
+            margin-bottom: unset;
+        }
 
-             p {
-                 padding-left: 220px;
-             }
-         }
+        .card-body {
+            width: unset;
 
-     }
- }
+            h3 {
+                font-size: $text-size-25;
+            }
+        }
+    }
+}
