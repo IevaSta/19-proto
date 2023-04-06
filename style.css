@@ -8,14 +8,14 @@
   flex-direction: column;
 }
 
-.container-footer .card-footer, .container-visual, .container-engineering, .container-strategic, .container-home .home-card, .container-visual .card-right .card, .container-engineering .card-right .card, .container-strategic .card-right .card, .container-form .card-left, .container-visual .card-left, .container-engineering .card-left, .container-strategic .card-left {
+.container-footer .card-footer, .container-visual, .container-engineering, .container-strategic, .container-home .home-card, .container-home .card-home-left, .container-visual .card-right .card, .container-engineering .card-right .card, .container-strategic .card-right .card, .container-form .card-left, .container-visual .card-left, .container-engineering .card-left, .container-strategic .card-left {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.container-home .home-card p, .container-home .main-p, .container-visual .card-right .card p, .container-engineering .card-right .card p, .container-strategic .card-right .card p, .container-form .card-left p, .container-visual .card-left p, .container-engineering .card-left p, .container-strategic .card-left p, .btn-link small {
+.container-home .home-card p, .container-home .card-home-left .main-p, .container-visual .card-right .card p, .container-engineering .card-right .card p, .container-strategic .card-right .card p, .container-form .card-left p, .container-visual .card-left p, .container-engineering .card-left p, .container-strategic .card-left p, .btn-link small {
   font-size: 16px;
   max-width: 80%;
   text-align: center;
@@ -47,6 +47,7 @@ body {
 .btn-link {
   width: 100%;
   padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,6 +86,14 @@ body {
   color: #d5ff30;
 }
 
+@media (min-width: 1024px) {
+  .btn-nav {
+    font-size: 16px;
+  }
+  .btn-nav:last-child {
+    margin-right: 0;
+  }
+}
 .checkbox {
   position: absolute;
   display: block;
@@ -188,6 +197,9 @@ body {
   .menu-items ul {
     flex-direction: row;
   }
+  .menu-items ul li a {
+    font-size: 16px;
+  }
 }
 .container-form .card-left h2, .container-visual .card-left h2, .container-engineering .card-left h2, .container-strategic .card-left h2 {
   font-size: 32px;
@@ -204,7 +216,7 @@ body {
 }
 
 .container-visual .card-right .card, .container-engineering .card-right .card, .container-strategic .card-right .card {
-  padding: 30px 0 30px 0;
+  padding: 60px 0 30px 0;
   margin: 45px 30px;
   box-shadow: 1px 1px 17px 5px rgba(18, 32, 35, 0.6);
   -webkit-box-shadow: 1px 1px 17px 5px rgba(18, 32, 35, 0.6);
@@ -294,7 +306,7 @@ body {
 /* header: start */
 .container-header {
   background-color: rgb(18, 32, 35);
-  padding: 25px 15px;
+  padding: 20px 15px;
   display: block;
   position: fixed;
   top: 0;
@@ -310,20 +322,24 @@ body {
 .container-header .container-nav > a .logo {
   height: 40px;
 }
+
 @media (min-width: 1024px) {
+  .container-header {
+    padding: 15px 90px;
+  }
   .container-header .container-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: unset;
   }
 }
-
 /* header: end */
 /* home: start */
 .container-home {
   padding: 180px 15px 90px 15px;
 }
-.container-home h1 {
+.container-home .card-home-left h1 {
   font-size: 32px;
   font-weight: 400;
   text-align: center;
@@ -331,13 +347,17 @@ body {
   color: #d5ff30;
   line-height: 1.3;
 }
-.container-home .main-p {
+.container-home .card-home-left .main-p {
   font-size: 18px;
   padding-top: 30px;
   padding-bottom: 60px;
 }
 .container-home .home-card {
-  padding-top: 90px;
+  padding: 60px 0 30px 0;
+  margin: 23px 30px;
+  box-shadow: 1px 1px 17px 5px rgba(34, 59, 65, 0.6);
+  -webkit-box-shadow: 1px 1px 17px 5px rgba(34, 59, 65, 0.6);
+  -moz-box-shadow: 1px 1px 17px 5px rgba(34, 59, 65, 0.6);
 }
 .container-home .home-card img {
   max-height: 93px;
@@ -353,6 +373,26 @@ body {
   padding-top: 30px;
 }
 
+@media (min-width: 1024px) {
+  .container-home {
+    padding: 180px 90px 30px;
+  }
+  .container-home .card-home-left {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .container-home .card-home-left h1 {
+    width: 40%;
+    font-size: 60px;
+    text-align: left;
+  }
+  .container-home .card-home-left .main-p {
+    width: 30%;
+    font-size: 32px;
+    text-align: right;
+  }
+}
 /* home: end */
 /* strategic: start */
 .container-strategic {

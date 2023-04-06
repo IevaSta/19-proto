@@ -14,3 +14,13 @@
  .btn-nav-active {
      color: $accent-color;
  }
+
+ @media (min-width: $desktop) {
+     .btn-nav {
+         font-size: $text-size-16;
+
+         &:last-child {
+             margin-right: 0;
+         }
+     }
+ }
