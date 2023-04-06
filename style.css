@@ -8,14 +8,14 @@
   flex-direction: column;
 }
 
-.container-footer .card-footer, .container-visual, .container-engineering, .container-strategic, .container-home .home-card, .container-home .card-home-left, .card-right-home, .container-visual .card-right .card, .container-engineering .card-right .card, .container-strategic .card-right .card, .container-form .card-left, .container-visual .card-left, .container-engineering .card-left, .container-strategic .card-left {
+.container-footer .card-footer, .container-visual, .container-engineering, .container-strategic, .container-home .home-card, .container-home .card-home-left, .card-right-home, .container-visual .card-right .card .card-body, .container-engineering .card-right .card .card-body, .container-strategic .card-right .card .card-body, .container-visual .card-right .card, .container-engineering .card-right .card, .container-strategic .card-right .card, .container-form .card-left, .container-visual .card-left, .container-engineering .card-left, .container-strategic .card-left {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.container-home .home-card p, .container-home .card-home-left .main-p, .container-visual .card-right .card p, .container-engineering .card-right .card p, .container-strategic .card-right .card p, .container-form .card-left p, .container-visual .card-left p, .container-engineering .card-left p, .container-strategic .card-left p, .btn-link small {
+.container-home .home-card p, .container-home .card-home-left .main-p, .container-visual .card-right .card .card-body p, .container-engineering .card-right .card .card-body p, .container-strategic .card-right .card .card-body p, .container-form .card-left p, .container-visual .card-left p, .container-engineering .card-left p, .container-strategic .card-left p, .btn-link small {
   font-size: 16px;
   max-width: 80%;
   text-align: center;
@@ -225,6 +225,18 @@ body {
   padding-bottom: 90px;
 }
 
+@media (min-width: 1024px) {
+  .container-form .card-left, .container-visual .card-left, .container-engineering .card-left, .container-strategic .card-left {
+    width: 55%;
+  }
+  .container-form .card-left h2, .container-visual .card-left h2, .container-engineering .card-left h2, .container-strategic .card-left h2 {
+    font-size: 48px;
+    max-width: unset;
+  }
+  .container-form .card-left p, .container-visual .card-left p, .container-engineering .card-left p, .container-strategic .card-left p {
+    max-width: 100%;
+  }
+}
 .container-visual .card-right .card, .container-engineering .card-right .card, .container-strategic .card-right .card {
   padding: 60px 0 30px 0;
   margin: 45px 30px;
@@ -236,16 +248,25 @@ body {
   max-height: 93px;
   margin-bottom: 30px;
 }
-.container-visual .card-right .card h3, .container-engineering .card-right .card h3, .container-strategic .card-right .card h3 {
+.container-visual .card-right .card .card-body h3, .container-engineering .card-right .card .card-body h3, .container-strategic .card-right .card .card-body h3 {
   font-size: 20px;
   color: #d5ff30;
   font-weight: 400;
 }
-.container-visual .card-right .card p, .container-engineering .card-right .card p, .container-strategic .card-right .card p {
+.container-visual .card-right .card .card-body p, .container-engineering .card-right .card .card-body p, .container-strategic .card-right .card .card-body p {
   text-align: justify;
   padding-top: 30px;
 }
 
+@media (min-width: 1024px) {
+  .container-visual .card-right .card .card-body h3, .container-engineering .card-right .card .card-body h3, .container-strategic .card-right .card .card-body h3 {
+    padding-left: 220px;
+    font-size: 25px;
+  }
+  .container-visual .card-right .card .card-body p, .container-engineering .card-right .card .card-body p, .container-strategic .card-right .card .card-body p {
+    padding-left: 220px;
+  }
+}
 .card-right-home {
   padding: 60px 0;
   margin: 45px 0px;
@@ -362,7 +383,7 @@ body {
 /* header: end */
 /* home: start */
 .container-home {
-  padding: 180px 15px 90px 15px;
+  padding: 180px 15px 0 15px;
 }
 .container-home .card-home-left h1 {
   font-size: 32px;
@@ -400,12 +421,10 @@ body {
 
 @media (min-width: 1024px) {
   .container-home {
-    padding: 180px 90px 30px;
+    padding: 180px 90px 60px;
   }
   .container-home .card-home-left {
     width: 100%;
-    justify-content: space-between;
-    flex-direction: row;
     align-items: unset;
   }
   .container-home .card-home-left h1 {
@@ -413,10 +432,10 @@ body {
     text-align: left;
   }
   .container-home .card-home-left .main-p {
-    width: 30%;
-    font-size: 20px;
-    text-align: right;
-    padding-top: unset;
+    width: 50%;
+    font-size: 25px;
+    text-align: left;
+    padding-top: 30px;
     padding-bottom: unset;
   }
   .container-home .home-card {
@@ -432,6 +451,13 @@ body {
 .container-strategic {
   background-color: rgb(34, 59, 65);
   padding: 90px 15px 0 15px;
+}
+@media (min-width: 1024px) {
+  .container-strategic {
+    flex-direction: row;
+    padding: 60px 90px 30px;
+    gap: 60px;
+  }
 }
 /* strategic: end */
 /* engineering: start */

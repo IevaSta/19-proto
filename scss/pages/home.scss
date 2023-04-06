@@ -41,7 +41,7 @@
 /* home: start */
 .container-home {
     @extend %bgrnd-flex-c-c-clm;
-    padding: 180px 15px 90px 15px;
+    padding: 180px 15px 0 15px;
 
     .card-home-left {
         @extend %flex-c-c-clm;
@@ -97,8 +97,6 @@
 
         .card-home-left {
             width: 100%;
-            justify-content: space-between;
-            flex-direction: row;
             align-items: unset;
 
             h1 {
@@ -107,10 +105,10 @@
             }
 
             .main-p {
-                width: 30%;
-                font-size: $text-size-20;
-                text-align: right;
-                padding-top: unset;
+                width: 50%;
+                font-size: $text-size-25;
+                text-align: left;
+                padding-top: 30px;
                 padding-bottom: unset;
             }
         }
@@ -142,6 +140,14 @@
         .card {
             @extend %card-right;
         }
+    }
+}
+
+@media (min-width: $desktop) {
+    .container-strategic {
+        flex-direction: row;
+        padding: $desctop-strategic-padding;
+        gap: 60px;
     }
 }
 

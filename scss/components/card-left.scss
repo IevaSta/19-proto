@@ -17,3 +17,18 @@
          padding-bottom: 90px;
      }
  }
+
+ @media (min-width: $desktop) {
+     %card-left {
+         width: 55%;
+
+         h2 {
+             font-size: $text-size-48;
+             max-width: unset;
+         }
+
+         p {
+             max-width: 100%;
+         }
+     }
+ }
