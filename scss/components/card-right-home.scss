@@ -1,0 +1,17 @@
+.card-right-home {
+    @extend %flex-c-c-clm;
+    padding: 60px 0;
+    margin: 45px 0px;
+
+    box-shadow: 1px 1px 17px 5px rgba(18, 32, 35, 0.6);
+    -webkit-box-shadow: 1px 1px 17px 5px rgba(18, 32, 35, 0.6);
+    -moz-box-shadow: 1px 1px 17px 5px rgba(18, 32, 35, 0.6);
+}
+
+@media (min-width: $desktop) {
+    .card-right-home {
+        flex-direction: row;
+        padding: unset;
+        gap: 60px;
+    }
+}
