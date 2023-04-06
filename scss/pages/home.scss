@@ -100,13 +100,13 @@
             align-items: unset;
 
             h1 {
-                font-size: $text-size-60;
+                font-size: $text-size-55;
                 text-align: left;
             }
 
             .main-p {
-                width: 50%;
-                font-size: $text-size-25;
+                width: 33%;
+                font-size: $text-size-20;
                 text-align: left;
                 padding-top: 30px;
                 padding-bottom: unset;
@@ -147,7 +147,6 @@
     .container-strategic {
         flex-direction: row;
         padding: $desctop-strategic-padding;
-        gap: 60px;
     }
 }
 
@@ -168,8 +167,13 @@
             @extend %card-right;
         }
     }
+}
 
-
+@media (min-width: $desktop) {
+    .container-engineering {
+        flex-direction: row;
+        padding: $desctop-strategic-padding;
+    }
 }
 
 /* engineering: end */

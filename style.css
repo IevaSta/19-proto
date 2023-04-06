@@ -227,10 +227,12 @@ body {
 
 @media (min-width: 1024px) {
   .container-form .card-left, .container-visual .card-left, .container-engineering .card-left, .container-strategic .card-left {
-    width: 55%;
+    width: 40vh;
+    align-items: flex-start;
+    margin-top: 35px;
   }
   .container-form .card-left h2, .container-visual .card-left h2, .container-engineering .card-left h2, .container-strategic .card-left h2 {
-    font-size: 48px;
+    font-size: 36px;
     max-width: unset;
   }
   .container-form .card-left p, .container-visual .card-left p, .container-engineering .card-left p, .container-strategic .card-left p {
@@ -263,11 +265,6 @@ body {
     padding: 30px 0 30px 0;
     margin: 45px 0;
     flex-direction: row;
-    margin-left: 200px;
-  }
-  .container-visual .card-right .card:first-child, .container-engineering .card-right .card:first-child, .container-strategic .card-right .card:first-child, .container-visual .card-right .card:last-child, .container-engineering .card-right .card:last-child, .container-strategic .card-right .card:last-child {
-    margin-left: 0;
-    margin-right: 200px;
   }
   .container-visual .card-right .card img, .container-engineering .card-right .card img, .container-strategic .card-right .card img {
     margin-left: 45px;
@@ -434,19 +431,19 @@ body {
 
 @media (min-width: 1024px) {
   .container-home {
-    padding: 180px 90px 60px;
+    padding: 90px 90px 60px;
   }
   .container-home .card-home-left {
     width: 100%;
     align-items: unset;
   }
   .container-home .card-home-left h1 {
-    font-size: 60px;
+    font-size: 55px;
     text-align: left;
   }
   .container-home .card-home-left .main-p {
-    width: 50%;
-    font-size: 25px;
+    width: 33%;
+    font-size: 20px;
     text-align: left;
     padding-top: 30px;
     padding-bottom: unset;
@@ -468,8 +465,7 @@ body {
 @media (min-width: 1024px) {
   .container-strategic {
     flex-direction: row;
-    padding: 60px 90px 30px;
-    gap: 60px;
+    padding: 90px 90px 30px;
   }
 }
 /* strategic: end */
@@ -477,6 +473,12 @@ body {
 .container-engineering {
   background-color: rgb(34, 59, 65);
   padding: 90px 15px 0 15px;
+}
+@media (min-width: 1024px) {
+  .container-engineering {
+    flex-direction: row;
+    padding: 90px 90px 30px;
+  }
 }
 /* engineering: end */
 /* visual: start */
