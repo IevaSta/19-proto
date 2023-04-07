@@ -78,3 +78,9 @@
         }
     }
 }
+
+@media (min-width: $desktop) {
+    .form {
+        width: 750px;
+    }
+}

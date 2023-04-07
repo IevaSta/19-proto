@@ -367,6 +367,11 @@ body {
   background-color: rgb(34, 59, 65);
 }
 
+@media (min-width: 1024px) {
+  .form {
+    width: 750px;
+  }
+}
 /*pages*/
 /* header: start */
 .container-header {
@@ -533,6 +538,23 @@ body {
   padding-bottom: 30px;
 }
 
+@media (min-width: 1024px) {
+  .container-form {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 90px 90px 0;
+  }
+  .container-form .card-left {
+    margin-top: unset;
+  }
+  .container-form .card-left h2 {
+    text-align: left;
+  }
+  .container-form .card-left p {
+    text-align: left;
+  }
+}
 /* form: end */
 /* footer: start */
 .container-footer {

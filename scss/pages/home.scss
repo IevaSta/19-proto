@@ -245,6 +245,27 @@
 
 }
 
+@media (min-width: $desktop) {
+    .container-form {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: $desctop-strategic-padding;
+
+        .card-left {
+            margin-top: unset;
+
+            h2 {
+                text-align: left;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+    }
+}
+
 /* form: end */
 
 /* footer: start */
