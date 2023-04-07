@@ -580,4 +580,10 @@ body {
   font-size: 14px;
 }
 
+@media (min-width: 1024px) {
+  .container-footer {
+    padding: 0 90px 60px;
+    margin-top: -145px;
+  }
+}
 /* footer: end */

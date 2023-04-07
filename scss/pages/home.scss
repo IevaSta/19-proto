@@ -300,4 +300,11 @@
 
 }
 
+@media (min-width: $desktop) {
+    .container-footer {
+        padding: $desctop-footer-padding;
+        margin-top: -145px;
+    }
+}
+
 /* footer: end */
