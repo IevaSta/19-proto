@@ -227,7 +227,7 @@ body {
 
 @media (min-width: 1024px) {
   .container-form .card-left, .container-visual .card-left, .container-engineering .card-left, .container-strategic .card-left {
-    width: 40vh;
+    width: 30%;
     align-items: flex-start;
     margin-top: 35px;
   }
@@ -465,7 +465,11 @@ body {
 @media (min-width: 1024px) {
   .container-strategic {
     flex-direction: row;
-    padding: 90px 90px 30px;
+    justify-content: space-between;
+    padding: 90px 90px 0;
+  }
+  .container-strategic .card-right {
+    width: 50%;
   }
 }
 /* strategic: end */
@@ -477,7 +481,11 @@ body {
 @media (min-width: 1024px) {
   .container-engineering {
     flex-direction: row;
-    padding: 90px 90px 30px;
+    justify-content: space-between;
+    padding: 90px 90px 0;
+  }
+  .container-engineering .card-right {
+    width: 50%;
   }
 }
 /* engineering: end */

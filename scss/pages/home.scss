@@ -146,7 +146,12 @@
 @media (min-width: $desktop) {
     .container-strategic {
         flex-direction: row;
+        justify-content: space-between;
         padding: $desctop-strategic-padding;
+
+        .card-right {
+            width: 50%;
+        }
     }
 }
 
@@ -172,7 +177,12 @@
 @media (min-width: $desktop) {
     .container-engineering {
         flex-direction: row;
+        justify-content: space-between;
         padding: $desctop-strategic-padding;
+
+        .card-right {
+            width: 50%;
+        }
     }
 }
 
