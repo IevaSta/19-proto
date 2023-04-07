@@ -227,7 +227,7 @@ body {
 
 @media (min-width: 1024px) {
   .container-form .card-left, .container-visual .card-left, .container-engineering .card-left, .container-strategic .card-left {
-    width: 30%;
+    width: 25%;
     align-items: flex-start;
     margin-top: 35px;
   }
@@ -262,19 +262,28 @@ body {
 
 @media (min-width: 1024px) {
   .container-visual .card-right .card, .container-engineering .card-right .card, .container-strategic .card-right .card {
-    padding: 30px 0 30px 0;
-    margin: 45px 0;
+    width: 46%;
+    padding: 20px 0;
+    margin: 15px 0;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   .container-visual .card-right .card img, .container-engineering .card-right .card img, .container-strategic .card-right .card img {
-    margin-left: 45px;
+    margin-left: 20px;
     margin-bottom: unset;
   }
   .container-visual .card-right .card .card-body, .container-engineering .card-right .card .card-body, .container-strategic .card-right .card .card-body {
-    width: unset;
+    width: 70%;
+    padding: 0 15px 0 25px;
+    align-items: flex-start;
   }
   .container-visual .card-right .card .card-body h3, .container-engineering .card-right .card .card-body h3, .container-strategic .card-right .card .card-body h3 {
     font-size: 25px;
+  }
+  .container-visual .card-right .card .card-body p, .container-engineering .card-right .card .card-body p, .container-strategic .card-right .card .card-body p {
+    max-width: unset;
+    width: 100%;
   }
 }
 .card-right-home {
@@ -469,7 +478,10 @@ body {
     padding: 90px 90px 0;
   }
   .container-strategic .card-right {
-    width: 50%;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 /* strategic: end */
@@ -485,7 +497,10 @@ body {
     padding: 90px 90px 0;
   }
   .container-engineering .card-right {
-    width: 50%;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 /* engineering: end */
@@ -493,6 +508,20 @@ body {
 .container-visual {
   background-color: rgb(34, 59, 65);
   padding: 90px 15px 0 15px;
+}
+@media (min-width: 1024px) {
+  .container-visual {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 90px 90px 0;
+    padding-bottom: 90px;
+  }
+  .container-visual .card-right {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 /* visual: end */
 /* form: start */

@@ -150,7 +150,10 @@
         padding: $desctop-strategic-padding;
 
         .card-right {
-            width: 50%;
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
     }
 }
@@ -181,7 +184,10 @@
         padding: $desctop-strategic-padding;
 
         .card-right {
-            width: 50%;
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
     }
 }
@@ -201,6 +207,22 @@
     .card-right {
         .card {
             @extend %card-right;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .container-visual {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: $desctop-strategic-padding;
+        padding-bottom: 90px;
+
+        .card-right {
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
     }
 }
